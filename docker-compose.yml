@@ -1,9 +1,8 @@
 services:
   python:
-    image: python:3
+    image: python:3.10
     volumes:
-      -./app:/usr/src/app
+      - ./app:/usr/src/app
     stdin_open: true
     tty: true
-    working_dir: /usr/src/app
-    command: python hola.py
+    command: python
