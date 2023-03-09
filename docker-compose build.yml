@@ -1,0 +1,4 @@
+services:
+  py:
+    image: youtubeimagen:latest
+    build: .

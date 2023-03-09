@@ -1,8 +1,7 @@
 services:
   python:
-    image: python:3.10
-    volumes:
-      - ./app:/usr/src/app
+    image: youtubeimagen:latest
+    build: .
     stdin_open: true
     tty: true
-    command: python
+    command: ['python', 'hola.py']
